@@ -30,7 +30,7 @@ app.post('/api/shorturl', (req, res) => {
   } else {
     count += 1
     urlmap[count] = req.body.url
-    res.json({ "original url": req.body.url, "short_url": count })
+    res.json({ "original_url": req.body.url, "short_url": count })
   }
 })
 
